@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tahmeed's Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/faviconio/favicon.ico" type="image/x-icon"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e2e9970dec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/tahmeedlogo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Tahmeed Rahman</span> <br> From Bangladesh.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!------------   ABOUT   ------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/tahmeed.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Proficient Software Developer with a Bachelor of Technology degree from the Institute of Engineering and Management in India 
+                        and a Master's degree in Information Technology from Swinburne University (an Australian university) in Malaysia. I bring 
+                        extensive experience in designing and implementing software solutions, supported by a strong foundation in programming and
+                         software development. I have successfully contributed to numerous projects, demonstrating expertise in application development, 
+                         database management, and system architecture. My passion for leveraging technology to solve real-world challenges drives me to 
+                         seek innovative solutions and contribute meaningfully to organizational objectives. With a strong focus on collaboration and 
+                         problem-solving, I thrive in dynamic environments where I can apply my technical skills to deliver impactful results.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Java | Python | C | JavaScript | JSX</li>
+                            <li><span>Frameworks & Libraries</span><br>React | Flask | Swing API</li>
+                            <li><span>Web Development</span><br>HTML | CSS | XML</li>
+                            <li><span>Databases</span><br>MySQL | PostgreSQL | MS Access | SQLite</li>
+                            <li><span>Cloud Computing</span><br>Azure | Google Cloud</li>
+                            <li><span>Software Development Practices</span><br>OOP | Agile | REST API | Problem-Solving</li>
+                            <li><span>Multimedia & Design</span><br>Graphic Design | Adobe Premiere Pro | Figma</li>
+                            <li><span>SEO & Digital Content</span><br>YouTube | SEO | LLM</li>
+                            <li><span>Languages</span><br>English | Bengali | Hindi (Professional proficiency or above)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>Software Developer</span><br>
+                                Still Waters Fiduciaries (SWF) · Contract</li>
+                                Kuching, Sarawak, Malaysia · Remote<br>
+                                <em>Feb 2024 - Jun 2024</em>
+                                <ul>
+                                    <li>Designed and implemented the Sales Workflow Information System (SWIS) to streamline sales record management.</li>
+                                    <li>Developed a user-friendly web interface for clients and administrators to manage sales data and user information.</li>
+                                    <li>Integrated an AI-driven chatbot to automate data entry from WhatsApp messages, increasing efficiency and reducing manual workload.</li>
+                                    <li>Built and optimized a comprehensive database system for secure and scalable data storage. Utilized Flask, Jinja, Python, SQL, HTML, CSS, JavaScript, and Machine Learning techniques to deliver the solution.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>Intern Software Engineer</span><br>
+                                Square Hospitals Ltd<br>
+                                Dhaka, Bangladesh · On - site<br>
+                                <em>May 2023 - October 2023</em>
+                                <ul>
+                                    <li>Gained knowledge of the software development lifecycle and principles of software engineering, including programming languages, development tools, and methodologies.</li>
+                                    <li>Assisted senior software developers with various projects, performing coding, debugging, and testing tasks.</li>
+                                    <li>Documented development processes and maintained project documentation, including project plans, design documents, and user manuals.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>Intern Developer</span><br>
+                                Anwer Khan Modern Medical College Hospital<br>
+                                Dhaka, Bangladesh · On - site<br>
+                                <em>June 2022 - September 2022</em>
+                                <ul>
+                                    <li>Developed a comprehensive understanding of the software development lifecycle, tools, and methodologies.</li>
+                                    <li>Documented processes and maintained detailed project documentation, including project plans, design documents, and user manuals.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>Master of Technology in Information Technology</span><br>
+                                Swinburne University of Technology <br>
+                                Melbourne, Australia <br>
+                                <em>2023 - 2024</em>
+                            </li>
+                            <li>
+                                <span>Bachelor of Technology in Information Technology</span><br>
+                                Institute of Engineering and Management <br>
+                                Kolkata, West Bengal, India <br>
+                                <em>2018 - 2022</em>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------   SERVICES   ------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Software Development</h2>
+                    <p>I specialize in software development, focusing on Java, Python, and C programming. With experience in the full software development lifecycle, I provide coding, debugging, and testing services to create robust, high-quality software solutions.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-window-restore"></i>
+                    
+                    <h2>Web Development</h2>
+                    <p>With expertise in HTML, CSS, JavaScript, and frameworks like React and Flask, I design and develop responsive, user-friendly web applications. My services cover everything from front-end design to back-end integration, ensuring a seamless web experience.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Cloud Computing & Databases</h2>
+                    <p>Leveraging cloud platforms like Azure and Google Cloud, I offer cloud computing solutions that ensure scalability and efficiency. I am skilled in database management with MySQL, PostgreSQL, MS Access, and SQLite for optimized data handling.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-artstation"></i>                    
+                    <h2>Multimedia & Graphic Design</h2>
+                    <p>With experience in Figma, Adobe Premiere Pro, and SEO, I provide services in graphic design, digital content creation, and multimedia editing. From designing user interfaces to creating engaging content, I bring creative ideas to life.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>            
+
+        </div>
+    </div>
+
+    <!------------   PORTFOLIO   ------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/phms.png">
+                    <div class="layer">
+                        <h3>Personalized Healthcare Management System</h3>
+                        <p>A chronic disease management platform integrating data from EHRs, CGM devices, and user uploads. Features AI-driven insights, secure data handling, and a Knowledge Graph for data analysis.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/glowingwebsite1.png">
+                    <div class="layer">
+                        <h3>Glowing</h3>
+                        <p>A fully responsive e-commerce website designed for accessibility on all devices and to provide an intuitive online shopping experience.</p>
+                        <!-- <button class="arrow left-arrow">&#10094;</button> 
+                            <button class="arrow right-arrow">&#10095;</button>  -->
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./images/ecomweb.png">
+                        <div class="layer">
+                            <h3>Ecommerce Website</h3>
+                            <p>Designed a fully responsive e-commerce website with seamless user experience across devices.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./images/PFS.png">
+                        <div class="layer">
+                    <h3>Personalised Finance System</h3>
+                    <p>The Personalized Finance Management System is a powerful tool designed to help individuals efficiently track and manage their finances.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/commercialapp.jpg">
+                <div class="layer">
+                    <h3>Commercial App</h3>
+                    <p>An Android application that allows users to register, log in, and browse products, simulating a commercial shopping experience with secure authentication.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/jarvis.png">
+                <div class="layer">
+                    <h3>JARVIS</h3>
+                    <p>Jarvis is a voice-activated assistant using speech recognition and synthesis to perform tasks, deliver real-time information, and boost productivity with seamless, intelligent interaction.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/2dgame.png">
+                <div class="layer">
+                <h3>2D Game</h3>
+                <p>Created a dynamic 2D game to showcase portfolio skills. The game demonstrates innovative design and functional gameplay using mouse and tap function (if on mobile devices) using modern web technologies.</p>
+                <a href="#" ><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+            </div>
+            </div>    
+            <a href="" class="btn">See More</a>        
+
+        </div>
+    </div>
+    
+    <!------------   CONTACT   ------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-envelope"></i> rahmantahmeed@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100009727691753" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/tahmeed-rahman-365863184/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/TahmeedWolf?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.youtube.com/@itahmeedofficial" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <a href="./images/TahmeedRahman_Resume.pdf" download class="btn btn2">Download CV / Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="confirmation-message"></span>                    
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><i class="far fa-copyright"></i> 2024 Tahmeed Rahman. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        var tabLinks = document.getElementsByClassName("tab-links");
+        var tabContents = document.getElementsByClassName("tab-contents");
+
+        function openTab (tabName) {
+            for(tabLink of tabLinks) {
+                tabLink.classList.remove("active-link");  
+            }
+            for(tabContent of tabContents) {
+                tabContent.classList.remove("active-tab");   
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sideMenu = document.getElementById("sidemenu");
+
+        function openMenu() {
+            sideMenu.style.right = "0";
+        }
+
+        function closeMenu() {
+            sideMenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx2uIXSm_-Z_ebUX_VI4A68lGurmR4EC6gvqP9U15uwglq--lpayueaKnHQCIQlcyb6BQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const confirmationMessage = document.getElementById("confirmation-message")
+
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                confirmationMessage.innerHTML = "Message sent Succesfully"
+                setTimeout(function() {
+                    confirmationMessage.innerHTML = ""}, 5000)
+                    form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <script>
+        document.querySelectorAll('.work').forEach((work) => {
+            // Array of images for each work item
+            const images = [
+              "./images/phms.png", 
+              "./images/glowingwebsite1.png", 
+              "./images/ecomweb.png",
+              "./images/PFS.png", 
+              "./images/commercialapp.jpg", 
+              "./images/jarvis.png", 
+              "./images/2dgame.png", 
+
+            ]; 
+        
+            let currentIndex = 0;
+            const workImage = work.querySelector('img'); // Select the img element directly
+        
+            // Set the initial image
+            workImage.src = images[currentIndex];
+        
+            // Left arrow event
+            work.querySelector('.left-arrow').addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                workImage.src = images[currentIndex];
+            });
+        
+            // Right arrow event
+            work.querySelector('.right-arrow').addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % images.length;
+                workImage.src = images[currentIndex];
+                    });
+        });
+      </script>
+
+</body>
+</html>
